@@ -141,9 +141,26 @@ button:active {
     background-color: #5a5a5a;
 }
 
+footer{
+    margin-bottom: 10px;
+    text-align: right;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+}
+footer > p > a {
+    color: white;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
 @media (max-width: 480px) {
     .calculator {
         padding: 15px;
+        margin-bottom: 10px;
     }
 
     button {
@@ -158,18 +175,12 @@ button:active {
     .current-operand {
         font-size: 1.6rem;
     }
-}
-footer{
+    
+    footer {
     margin-bottom: 10px;
     text-align: center;
     color: white;
     position: fixed;
-    bottom: 0;
-}
-footer > p > a {
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.2rem;
-    text-decoration: none;
+    display: none;
+    }
 }
